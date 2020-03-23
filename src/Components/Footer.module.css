@@ -1,0 +1,6 @@
+.footer{
+    grid-area: footer;
+    background-image:url('https://pravo-96.ru/wp-content/uploads/2017/07/footer-background.jpg');
+    color:rgb(230, 99, 99);
+    text-align: center;
+  }
