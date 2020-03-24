@@ -1,9 +1,9 @@
 import React from "react";
 import s from "./App.module.css";
-import Header from "./Components/Header";
-import Navbar from "./Components/Navbar";
-import Profile from "./Components/Profile";
-import Footer from "./Components/Footer";
+import Header from "./Components/Header/Header";
+import Navbar from "./Components/Navbar/Navbar";
+import Profile from "./Components/Profile/Profile";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
