@@ -1,13 +1,10 @@
-.profile{
-    grid-area: profile;
-  }
-  
-  .content_avatar{
-    width:100%;
+
+.content_avatar {
+    width: 100%;
     height: 300px;
-  }
-  
-  .avatar{
-    width:100px;
-  }
+}
+
+.avatar {
+    width: 100px;
+}
   

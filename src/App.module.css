@@ -1,13 +1,14 @@
-.appWrapper{
-  height:100vh;
-  width: 1300px;
-  margin:0 auto;
-  display: grid;
-  grid-template-areas: 
-  'header header'
-  'nav profile '
-  'footer footer';
-  grid-template-rows: 60px 1fr 40px;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 1px;
+.appWrapper {
+    height: 100vh;
+    width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 'header header' 'nav content ' 'footer footer';
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 1px;
+}
+
+.appWrapperContent {
+    grid-area: content;
 }

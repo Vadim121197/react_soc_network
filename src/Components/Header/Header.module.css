@@ -1,11 +1,11 @@
-.header{
+.header {
     grid-area: header;
-    background-image: url('https://aibusiness.com/wp-content/uploads/2018/11/HEADER-BACKGROUND.png'); 
-  }
-  
-  .header img{
+    background-image: url('https://aibusiness.com/wp-content/uploads/2018/11/HEADER-BACKGROUND.png');
+}
+
+.header img {
     width: 120px;
     padding-left: 50px;
-    
-  }
+
+}
   

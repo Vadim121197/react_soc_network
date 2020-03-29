@@ -1,18 +1,25 @@
-.navbar{
+.navbar {
     grid-area: nav;
-  
-    background-image:url('https://i.pinimg.com/originals/f7/99/cf/f799cf7f116b0a9e3231d1c6cdc958cb.jpg');
+
+    background-image: url('https://i.pinimg.com/originals/f7/99/cf/f799cf7f116b0a9e3231d1c6cdc958cb.jpg');
     background-position: center;
     padding-top: 20px;
     padding-left: 20px;
-  }
-  
-  .item{
+}
+
+.item {
     padding-top: 15px;
-    color:rgb(230, 99, 99);
-  }
-   a{
+    color: rgb(230, 99, 99);
+}
+
+a {
     font-size: 25px;
     margin-top: 30px;
-  }
+    text-decoration: none;
+    color: red;
+}
+
+a.active {
+    color: gold;
+}
   
