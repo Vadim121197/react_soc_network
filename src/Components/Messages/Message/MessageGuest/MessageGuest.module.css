@@ -1,0 +1,18 @@
+.message{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr ;
+    padding: 20px;
+}
+.avatar{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 100px
+}
+
+
+.textMessage{
+    height: 7vh;
+    font-size: 20px;
+    background-color: gold;
+}
