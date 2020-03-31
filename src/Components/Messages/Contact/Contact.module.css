@@ -1,0 +1,27 @@
+.messagesItems{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr ;
+    padding: 20px;
+}
+
+
+.avatar{
+width: 7vh;
+height: 7vh;
+border-radius: 100px;
+}
+
+.aboutAuthor{
+    padding-left: 10px;
+}
+
+.nameAuthor{
+    height: 4vh;
+    font-size: 20px;
+}
+
+.textMessage{
+    height: 3vh;
+    font-size: 15px;
+}

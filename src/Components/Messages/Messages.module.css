@@ -1,16 +1,4 @@
-.messages{
+.dialogs{
     display: grid;
-    grid-template-areas: 'search' 'message';
-    grid-template-columns: 1fr;
-    grid-gap: 1px;
-}
-.search{
-    grid-area: search;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 20px;
-}
-
-.searchTitle{
-    width: 65vw;
+    grid-template-columns: 4fr 6fr;
 }
