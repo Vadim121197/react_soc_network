@@ -2,14 +2,7 @@
     display: grid;
     grid-template-columns: 3fr 7fr;
 }
-.item{
-    color:black;
-}
 
- .active{
-    color:gold;
-     background-color: beige !important;
-}
 
 .messages{
     background-color: beige;

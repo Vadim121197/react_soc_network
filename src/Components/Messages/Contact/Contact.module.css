@@ -1,3 +1,11 @@
+.item{
+    color:black;
+}
+
+.active{
+    color:gold;
+    background-color: beige !important;
+}
 .messagesItems{
     display: grid;
     grid-template-columns: 1fr 10fr;

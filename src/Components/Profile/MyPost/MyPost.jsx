@@ -7,10 +7,13 @@ const MyPost = (props) => {
         <div className={s.post}>
             <div>
                 <div className={s.item}>
-                    new post
+                    <h3>My posts</h3>
                 </div>
-                <textarea></textarea>
-                <button>Add post</button>
+                <div><textarea></textarea>
+                </div>
+                <div>
+                    <button>Add post</button>
+                </div>
             </div>
             <Post title='Hello my friend'/>
             <Post title='Amigo'/>

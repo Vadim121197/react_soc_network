@@ -1,14 +1,13 @@
 import React from "react";
 import s from "./Navbar.module.css";
-import {NavLink} from "react-router-dom";
+import {NavLink,Link} from "react-router-dom";
 
 const Navbar = (Props) => {
     return (
-
         <div className={s.navbar}>
             <nav className={s.nav}>
                 <div className={s.item}>
-                    <NavLink to='/' activeClassName={s.active}>Profile</NavLink>
+                    <NavLink exact to='/' activeClassName={s.active}>Profile</NavLink>
                 </div>
                 <div className={s.item}>
                     <NavLink to='/messages' activeClassName={s.active}>Messages</NavLink>
@@ -17,7 +16,15 @@ const Navbar = (Props) => {
                     <NavLink to='/news' activeClassName={s.active}>News</NavLink>
                 </div>
                 <div className={s.item}>
-                    <NavLink to='/music' activeClassName={s.active}>Music</NavLink>
+                    <NavLink to={
+                        {
+                            pathname: '/music',
+                            state: {
+                                from: "root"
+                            }
+                        }
+                    }
+                             activeClassName={s.active}>Music</NavLink>
                 </div>
                 <div className={s.item}>
                     <NavLink to='/settings' activeClassName={s.active}>Settings</NavLink>
