@@ -1,23 +1,24 @@
 import React from "react";
 import s from "./ProfileInfo.module.css";
+import userData from '../../../ MyData/dataUser';
 
 const ProfileInfo = (props) => {
     return (<div className={s.profile}>
         <div>
-            <img src="https://bm.img.com.ua/berlin/storage/600x500/2/ab/6e5b54cf6962849d214d2e5c12625ab2.jpg"
+            <img src={userData[0].avatarContent}
                 className={s.content_avatar} />
         </div>
         <div className={s.descriptionsBlock}>
             <div className={s.avatarDescription}>
-                <img src="https://a.d-cd.net/3YAAAgGTYuA-960.jpg" className={s.avatar} />
+                <img src={userData[0].avatar} className={s.avatar} />
             </div>
             <div className={s.descriptionUser}>
-                    <h2>Albert Einstein</h2>
+                    <h2>{userData[0].name}</h2>
                     <hr/>
-                    <h4>Birthday date: 14.03.1879</h4>
-                    <h4>Locations: Odessa, Ukraine</h4>
-                    <h4>Language: JS</h4>
-                    <h4>Educations: VITI</h4>
+                    <h4>Birthday date: {userData[0].birthDate}</h4>
+                    <h4>Locations: {userData[0].location}</h4>
+                    <h4>Language: {userData[0].language}</h4>
+                    <h4>Educations: {userData[0].education}</h4>
             </div>
         </div>
     </div>

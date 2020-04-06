@@ -1,8 +1,12 @@
 import React from "react";
 import s from "./MyPost.module.css";
 import Post from "./Post/Post";
+import userData from '../../../ MyData/dataUser';
+import postData from '../../../ MyData/postsData';
 
 const MyPost = (props) => {
+    const postsData = postData.map(element => <Post key={element.id} title={element.title} name={element.name}
+                        avatar={element.avatar}/>)
     return (
         <div className={s.post}>
             <div className={s.wtf}>
@@ -18,12 +22,7 @@ const MyPost = (props) => {
                     </div>
                 </div>
                 <div className={s.postList}>
-                    <Post title='Чуваки, зацените мою новую татуху на аватарке) #m=ca2' />
-                    <Post title='Теория Эйнштейна базируется на двух основных принципах:
-
-1. Принцип относительности: физические законы сохраняются даже для тел, являющихся инерциальными системами отсчета, т. е. двигающимися на постоянной скорости относительно друг друга.  
-
-2. Принцип скорости света: скорость света остается неизменной для всех наблюдателей, независимо от их скорости по отношению к источнику света. (Физики обозначают скорость света буквой с).' />
+                    {postsData}
                 </div>
             </div>
         </div>
