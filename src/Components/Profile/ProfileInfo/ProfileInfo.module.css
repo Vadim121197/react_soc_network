@@ -1,16 +1,33 @@
-
-.profile {
-    background-color: gold;
-}
 .descriptionsBlock {
-
-    padding: 10px;
+    display: grid;
+    padding: 5px;
+    grid-template-areas:'avaDes descUser';
+    grid-template-columns: 2fr 9fr;
+  
 }
 .avatar {
-    width: 80px;
-    border-radius: 50px;
+    width: 10em;
+    height: 100%;
 }
 .content_avatar {
     width: 100%;
     height: 300px;
+}
+
+.descriptionUser{
+    grid-area: descUser;
+}
+
+.avatarDescription{
+    grid-area: avaDes;
+    
+}
+.descriptionUser h4{
+    margin-top: 0; 
+    margin-bottom: 0;
+    color: gray;
+}
+.descriptionUser h2{
+    margin-top: 0; 
+    color: red;
 }

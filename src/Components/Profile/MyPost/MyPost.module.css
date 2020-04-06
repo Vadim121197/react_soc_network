@@ -1,3 +1,41 @@
 .post{
+    display: grid;
+    grid-template-areas:'wtf postsDescriptions';
+    grid-template-columns: 2fr 9fr;
     padding: 10px;
+}
+
+.wtf{
+    grid-area: wtf;
+}
+.postsDescriptions{
+    grid-area: postsDescriptions;
+}
+
+.postAdd{
+    display: grid;
+    grid-template-areas:'inputText inputBtn';
+    grid-template-columns: 9fr 2fr;
+
+  
+}
+
+.inputText{
+    grid-area: inputText;
+}
+
+textarea{
+    width: 100%;
+    
+}
+.inputBtn{
+    grid-area: inputBtn;
+}
+button{
+    width: 100%;
+}
+
+.postList{
+    padding-top:15px;
+
 }

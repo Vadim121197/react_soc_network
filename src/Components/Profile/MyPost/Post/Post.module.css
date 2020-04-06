@@ -1,4 +1,27 @@
+.post{
+    display: grid;
+    grid-template-areas:'postAvatar postText';
+    grid-template-columns: 1fr 10fr;
+    border-bottom:1px solid gray;
+    margin-top: 20px;
+}
+.postAvatar{
+    grid-area: postAvatar;
+}
+
 .avatar {
-    width: 80px;
-    border-radius: 50px;
+    width: 4em;
+    height:4em;
+}
+.postText{
+    grid-area: postText;
+}
+.postText h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: blue;
+}
+.postText p{
+    text-align: justify;
+    margin-top: 0;
 }
