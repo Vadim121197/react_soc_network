@@ -8,7 +8,7 @@ import messages from '../../ MyData/messagesData';
 
 
 const Messages = (props) => {
-    const message = messages.map(element=>< Contact key={element.id} name={element.name}
+    const message = messages.map(element=>< Contact key={element.id} name={element.name} id={element.id}
     mes={element.msg} avatar={element.avatar}/>)
     return (
         <div className={s.dialogs}>
