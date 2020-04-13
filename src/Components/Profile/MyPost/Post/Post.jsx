@@ -6,15 +6,14 @@ const Post = (props) => {
     return (<div className={s.post}>
         <div className={s.postAvatar}>
             <img
-                src={props.avatar}
+                src={props.userProfile.avatar}
                 className={s.avatar} />
         </div>
         <div className={s.postText}>
-            <h3>{props.name}</h3>
-            <p>{props.title}</p>
+            <h3>{props.userProfile.name}</h3>
+            <p>{props.userProfile.title}</p>
         </div>
     </div>
-    
     );
 };
 export default Post;
