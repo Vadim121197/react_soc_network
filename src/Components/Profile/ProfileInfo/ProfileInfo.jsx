@@ -4,20 +4,20 @@ import s from "./ProfileInfo.module.css";
 const ProfileInfo = (props) => {
     return (<div className={s.profile}>
         <div>
-            <img src="https://bm.img.com.ua/berlin/storage/600x500/2/ab/6e5b54cf6962849d214d2e5c12625ab2.jpg"
+            <img src={props.contentAvatar}
                 className={s.content_avatar} />
         </div>
         <div className={s.descriptionsBlock}>
             <div className={s.avatarDescription}>
-                <img src="https://a.d-cd.net/3YAAAgGTYuA-960.jpg" className={s.avatar} />
+                <img src={props.avatar} className={s.avatar} />
             </div>
             <div className={s.descriptionUser}>
-                    <h2>Albert Einstein</h2>
-                    <hr/>
-                    <h4>Birthday date: 14.03.1879</h4>
-                    <h4>Locations: Odessa, Ukraine</h4>
-                    <h4>Language: JS</h4>
-                    <h4>Educations: VITI</h4>
+                <h2>{props.name}</h2>
+                <hr />
+                <h4>Birthday date: {props.birthDate}</h4>
+                <h4>Locations: {props.locations}</h4>
+                <h4>Language: {props.language}</h4>
+                <h4>Educations: {props.educations}</h4>
             </div>
         </div>
     </div>

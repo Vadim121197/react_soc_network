@@ -5,11 +5,11 @@ const Post = (props) => {
     return (<div className={s.post}>
         <div className={s.postAvatar}>
             <img
-                src='https://a.d-cd.net/3YAAAgGTYuA-960.jpg'
+                src={props.avatar}
                 className={s.avatar} />
         </div>
         <div className={s.postText}>
-            <h3>Albert Einstein</h3>
+            <h3>{props.name}</h3>
             <p>{props.title}</p>
         </div>
     </div>
