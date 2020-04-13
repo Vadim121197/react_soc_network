@@ -13,17 +13,24 @@ const userProfile={
     educations:"VITI"
 }
 
-const titlePost={
-    1:'Чуваки, зацените мою новую татуху на аватарке) #m=ca2',
-    2:'Теория Эйнштейна базируется на двух основных принципах: 1. Забей на физику; 2. Учи React'
-}
+const titlePost=[
+    {
+        id:1,
+        title:'Чуваки, зацените мою новую татуху на аватарке) #m=ca2'
+    },
+    {
+        id:2,
+        title:'Теория Эйнштейна базируется на двух основных принципах: 1. Забей на физику; 2. Учи React'
+    }
+];
 
 const Profile = (props) => {
+    const addPostList = titlePost.map(el=> <MyPost avatar={el.avatar} name={el.name} title={el.title}/>)
     return (<div >
             <ProfileInfo contentAvatar={userProfile.contentAvatar}
             avatar={userProfile.avatar} name={userProfile.name} birthDate={userProfile.birthDate}
             locations={userProfile.locations} language={userProfile.language} educations={userProfile.educations}/>
-            <MyPost avatar={userProfile.avatar} name={userProfile.name} title1={titlePost[1]} title2={titlePost[2]}/>
+            <MyPost avatar={userProfile.avatar} name={userProfile.name} title1={titlePost.title} title2={titlePost[2]}/>
         </div>
     );
 };

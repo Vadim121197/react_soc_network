@@ -18,8 +18,7 @@ const MyPost = (props) => {
                     </div>
                 </div>
                 <div className={s.postList}>
-                    <Post title={props.title1} name={props.name} avatar = {props.avatar}/>
-                    <Post title={props.title2} name={props.name} avatar = {props.avatar}/>
+                    <Post name={props.name} avatar={props.avatar} title = {props.title1}/>
                 </div>
             </div>
         </div>
