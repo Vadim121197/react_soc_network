@@ -3,11 +3,12 @@ import s from "./MyPost.module.css";
 import Post from "./Post/Post";
 
 const MyPost = (props) => {
-
+    const addPostList=props.titles.map(el=> <Post userProfile={props.userProfile} title={el.title}/>);
+    
     return (
         <div className={s.post}>
                 <div className={s.postList}>
-                    <Post userProfile={props.userProfile}/>
+                    {addPostList}
                 </div>
             </div>
     );

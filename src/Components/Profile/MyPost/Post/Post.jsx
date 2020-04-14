@@ -11,7 +11,7 @@ const Post = (props) => {
         </div>
         <div className={s.postText}>
             <h3>{props.userProfile.name}</h3>
-            <p>{props.userProfile.title}</p>
+            <p>{props.title}</p>
         </div>
     </div>
     );

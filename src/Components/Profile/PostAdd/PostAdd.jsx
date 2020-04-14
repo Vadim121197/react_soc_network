@@ -7,7 +7,7 @@ const PostAdd= (props) => {
                     <textarea></textarea>
                 </div>
                 <div className={s.inputBtn}>
-                    <button>Add post</button>
+                    <button >Add post</button>
                 </div>
             </div>
     );

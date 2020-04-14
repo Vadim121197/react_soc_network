@@ -5,15 +5,16 @@ import MessageGuest from "./Message/MessageGuest/MessageGuest";
 import MessageUser from "./Message/MessageUser/MessageUser";
 
 const Messages = (props) => {
-    let addContact = props.contact.map(el => <Contact name={el.name} id={el.id} mes={el.mes} avatar={el.avatar} />)
+    let addDialogs = props.state.dialogs.map(el => <Contact name={el.name} id={el.id} mes={el.mes} avatar={el.avatar} />)
+    let addMessagesGuest=props.state.messages.map(m=><MessageGuest message={m.message} contact={props.state.dialogs}/>)
     return (
         <div className={s.dialogs}>
             <div className={s.contacts}>
-                {addContact}
+                {addDialogs}
             </div>
             <div className={s.messages}>
-                <MessageGuest contact={props.contact}/>
-                <MessageUser />
+                {addMessagesGuest}
+                <MessageUser/>
             </div>
         </div>
     );

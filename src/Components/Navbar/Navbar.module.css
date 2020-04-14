@@ -22,4 +22,11 @@ a {
 a.active {
     color: gold;
 }
-  
+
+.friendsList{
+    display: flex;
+}
+
+.itemFriends{
+    padding-top: 10vh;
+}
