@@ -8,7 +8,7 @@ import PostAdd from "./PostAdd/PostAdd";
 const Profile = (props) => {
     return (<div>
             <ProfileInfo userProfile={props.state.userProfile}/>
-            <PostAdd/>
+            <PostAdd state={props.state.titles} addPost={props.addPost}/>
             <MyPost userProfile={props.state.userProfile} titles={props.state.titles}/>
         </div>
     );

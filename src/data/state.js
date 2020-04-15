@@ -54,5 +54,13 @@ let state = {
         ]
     }
 }
+export let addPost=(postMessage)=>{
+    let newPost={
+        id:5,
+        title:postMessage
+    };
+    state.profilesPage.titles.push(newPost);
+}
+
 
 export default state;
