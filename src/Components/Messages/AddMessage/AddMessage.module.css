@@ -1,0 +1,20 @@
+.msgAdd{
+    display: grid;
+    grid-template-areas:'inputText inputBtn';
+    grid-template-columns: 9fr 2fr;
+    
+}
+.inputText{
+    grid-area: inputText;
+}
+
+textarea{
+    width: 100%;
+
+}
+.inputBtn{
+    grid-area: inputBtn;
+}
+button{
+    width: 100%;
+}
