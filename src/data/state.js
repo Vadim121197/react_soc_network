@@ -1,3 +1,6 @@
+let reRender=()=> {
+    console.log('asdasd')
+}
 let state = {
     messagesPage: {
         dialogs: [
@@ -51,16 +54,26 @@ let state = {
                 id: 2,
                 title: 'Hello'
             }
-        ]
+        ],
+        newPostText:''
     }
 }
-export let addPost=(postMessage)=>{
+
+export const addPost=()=>{
     let newPost={
         id:5,
-        title:postMessage
+        title:state.profilesPage.newPostText
     };
-    state.profilesPage.titles.push(newPost);
+    state.profilesPage.titles.unshift(newPost);
+    state.profilesPage.newPostText=''
+    reRender(state);
 }
-
+export const updateNewPost = (newText)=>{
+    state.profilesPage.newPostText=newText;
+    reRender(state)
+}
+export const subscribe = (observer)=>{
+    reRender=observer
+}
 
 export default state;
